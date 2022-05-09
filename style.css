@@ -42,3 +42,11 @@ body{
 p{
     text-align: center;
 }
+
+ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: right;
+    align-items: flex-end;
+}
