@@ -1,0 +1,16 @@
+@mixin cardAbs {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+@mixin cardRel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+@mixin radiuss {
+    border: 1px transparent;
+    border-radius: 8px;
+}
