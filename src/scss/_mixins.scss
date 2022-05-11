@@ -14,3 +14,11 @@
     border: 1px transparent;
     border-radius: 8px;
 }
+
+@mixin flexin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}

@@ -69,6 +69,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 30px;
 }
 .container .card .card-inner .card-back {
   background-color: rgb(78, 122, 134);
@@ -106,10 +107,82 @@ body {
   backface-visibility: hidden;
 }
 
-/* ---------- Image Resize ---------- */
+/* ---------- Image & Icons Resize ---------- */
 .profilP {
   border: 1px transparent rgb(78, 122, 134);
   border-radius: 50%;
   width: 200px;
   margin: 20px;
+}
+
+.fa-solid {
+  font-size: 2em;
+}
+
+/* ---------- Career List ---------- */
+.card-back__career-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+.card-back__career-list .career {
+  list-style-type: none;
+}
+
+/* ---------- Skill List ---------- */
+.card-back__skill-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+.card-back__skill-list .skill {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card-back__skill-list .skill progress {
+  color: red;
+  width: 200px;
+  height: 10px;
+}
+
+progress {
+  -webkit-appearance: none;
+}
+
+::-webkit-progress-bar {
+  background-color: orange;
 }/*# sourceMappingURL=style.css.map */
