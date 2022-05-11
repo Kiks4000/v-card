@@ -18,6 +18,9 @@
         margin: auto;
         row-gap: 30px;
       }
+      .card:focus .card-inner {
+        transform: rotateY(180deg);
+      }
 }
 
 /* ----- Tablet portrait ----- */
@@ -28,6 +31,9 @@
         grid-template-columns: 1fr 1fr;
         margin: auto;
         row-gap: 30px;
+      }
+      .card:focus .card-inner {
+        transform: rotateY(180deg);
       }
 }
 
@@ -40,10 +46,7 @@
         margin: auto;
         row-gap: 30px;
       }
+      .card:focus .card-inner {
+        transform: rotateY(180deg);
+      }
 }
-
-
-        /*gap: 30px 30px;
-        margin: 40px;
-        min-width: 300px;
-        max-width: 900px;*/
