@@ -28,8 +28,7 @@ body {
   margin: 75px auto;
   padding: 50px;
 }
-
-.card {
+.container .card {
   border: 1px transparent;
   border-radius: 8px;
   background-color: beige;
@@ -40,8 +39,19 @@ body {
   -webkit-perspective: 1000px;
           perspective: 1000px;
 }
-
-.card-front {
+.container .card .card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+.container .card .card-inner .card-front {
   background-color: #bbb;
   color: black;
   border: 1px transparent;
@@ -60,8 +70,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-
-.card-back {
+.container .card .card-inner .card-back {
   background-color: rgb(78, 122, 134);
   color: white;
   -webkit-transform: rotateY(180deg);
@@ -84,19 +93,6 @@ body {
 }
 
 /* ---------- Card Animation ---------- */
-.card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  -webkit-transition: -webkit-transform 0.8s;
-  transition: -webkit-transform 0.8s;
-  transition: transform 0.8s;
-  transition: transform 0.8s, -webkit-transform 0.8s;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-}
-
 .card:hover .card-inner {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);

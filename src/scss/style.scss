@@ -29,48 +29,44 @@ body{
     justify-content: center;
     margin: 75px auto;
     padding: 50px;
+      .card{
+         @include radiuss;
+         background-color: beige;
+         box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.2);
+         width: 300px;
+         height: 450px;
+         perspective: 1000px;
+          .card-inner {
+              @include cardRel; 
+              text-align: center;
+              transition: transform 0.8s;
+              transform-style: preserve-3d;
+              .card-front {
+                background-color: #bbb;
+                color: black;
+                @include radiuss;
+              
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+              }
+              
+              .card-back {
+                background-color: $background;
+                color: white;
+                transform: rotateY(180deg);
+                @include radiuss;
+              
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+              }
+        }
   }
-
-.card{
-    @include radiuss;
-    background-color: beige;
-    box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.2);
-    width: 300px;
-    height: 450px;
-    perspective: 1000px;
-}
-
-.card-front {
-  background-color: #bbb;
-  color: black;
-  @include radiuss;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.card-back {
-  background-color: $background;
-  color: white;
-  transform: rotateY(180deg);
-  @include radiuss;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
+  }
 /* ---------- Card Animation ---------- */
-
-.card-inner {
-  @include cardRel; 
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
 
 .card:hover .card-inner {
   transform: rotateY(180deg);
