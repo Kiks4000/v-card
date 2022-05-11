@@ -232,6 +232,7 @@ body {
   color: beige;
 }
 
+/* ---------- Contact List hover ---------- */
 .contact-list--link:hover {
   text-shadow: 0 0 7px beige, 0 0 10px beige, 0 0 42px #bbb, 0 0 77px #bbb, 0 0 100px #bbb;
 }/*# sourceMappingURL=style.css.map */
