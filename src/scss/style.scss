@@ -1,5 +1,6 @@
 @import '_variables';
 @import '_mixins';
+@import '_media';
 
 /* ---------- Reset CSS ---------- */
 
@@ -23,7 +24,7 @@ body{
 
 .container {  
     display: grid;
-    grid-template-columns: 1fr repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     justify-items: center;
     justify-content: center;
@@ -137,20 +138,23 @@ body{
     font-size: 1.5em;
     @include flexin;
     gap: 8px;
-    .contact-list--link:link, .contact-list--link:visited{
+    .contact-list--link:link, .contact-list--link:visited, .contact-list--link{
       text-decoration: none;
       color: beige;
+      &:hover{
+        text-shadow:
+        0 0 7px beige,
+        0 0 10px beige,
+        0 0 42px #bbb,
+        0 0 77px #bbb,
+        0 0 100px #bbb;
+      }
     }
   }
 }
 
 /* ---------- Contact List hover ---------- */
 
-.contact-list--link:hover{
-  text-shadow:
-  0 0 7px beige,
-  0 0 10px beige,
-  0 0 42px #bbb,
-  0 0 77px #bbb,
-  0 0 100px #bbb;
-}
+/*.contact-list--link:hover{
+ 
+}*/

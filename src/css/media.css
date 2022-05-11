@@ -1,0 +1,49 @@
+/* ----- Active Desktop ----- */
+
+@media(max-width: 1335px){
+    .container {  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+        row-gap: 30px;
+      }
+}
+
+/* ----- Tablet Ladscape ----- */
+
+@media(max-width: 1200px) and (min-width: 900px) {
+    .container {  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+        row-gap: 30px;
+      }
+}
+
+/* ----- Tablet portrait ----- */
+
+@media(max-width:900px) and (min-width: 768px) {
+    .container {  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+        row-gap: 30px;
+      }
+}
+
+/* ----- Mobile Phone ----- */
+
+@media(max-width: 767px){
+    .container {  
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+        row-gap: 30px;
+      }
+}
+
+
+        /*gap: 30px 30px;
+        margin: 40px;
+        min-width: 300px;
+        max-width: 900px;*/
