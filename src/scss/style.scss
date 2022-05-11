@@ -33,7 +33,7 @@ body{
       .card{
          @include radiuss;
          background-color: beige;
-         box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.2);
+         @include standardShadow;
          width: 300px;
          height: 450px;
          perspective: 1000px;
@@ -87,13 +87,18 @@ body{
   font-size: 2em;
 }
 
+.fa-phone{
+  font-size: 1em;
+}
+
 /* ---------- Career List ---------- */
 
 .card-back__career-list{
   @include flexin;
-  gap: 30px;
+  gap: 35px;
   .career{
     list-style-type: none;
+    font-size: larger;
   }
 }
 
@@ -101,22 +106,49 @@ body{
 
 .card-back__skill-list{
   @include flexin;
-  gap: 30px;
+  gap: 50px;
   .skill{
     list-style-type: none;
     @include flexin;
     progress{
-      color: red;
-      width: 200px;
-      height: 10px;
+      width: 250px;
+      height: 15px;
+      border: 3px solid beige;
+      background: beige;
+      border-radius: 8px;
+    }
+    progress::-webkit-progress-value {
+      background: #bbb;
+    }
+    
+    progress::-webkit-progress-bar {
+      background: beige;
     }
   }
 }
 
-progress {
-  -webkit-appearance: none;
+/* ---------- Contact List --------- */
+
+.card-back__contact-list{
+  @include flexin;
+  gap: 25px;
+  .list-contact{
+    list-style-type: none;
+    font-size: 1.5em;
+    @include flexin;
+    gap: 8px;
+    .contact-list--link:link, .contact-list--link:visited{
+      text-decoration: none;
+      color: beige;
+    }
+  }
 }
 
-::-webkit-progress-bar {
-   background-color: orange;
+.contact-list--link:hover{
+  text-shadow:
+  0 0 7px beige,
+  0 0 10px beige,
+  0 0 42px #bbb,
+  0 0 77px #bbb,
+  0 0 100px #bbb;
 }
